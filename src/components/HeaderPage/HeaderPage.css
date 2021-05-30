@@ -1,0 +1,72 @@
+.header {
+  background-color: #465dff;
+  display: flex;
+  /* из за паддингов адаптим МОЖЕТ БЫТЬ сломается */
+  padding: 18px 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  border-radius: 50%;
+  background-color: #2be080;
+  /* если блоки будут выпадать, то это из-за залоченной ширины и высоты этого элемента ↓*/
+  min-width: 38px;
+  min-height: 38px;
+}
+
+.logo-container__logo {
+  width: 14px;
+  height: 20px;
+  margin: auto;
+  animation: rotateLogo 2s cubic-bezier(0.81, 0.01, 0.25, 1) alternate;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 183px;
+  align-items: center;
+}
+
+.link__register {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.link__register:hover {
+  opacity: 0.8;
+}
+
+.link__enter-contaier {
+  border-radius: 3px;
+  background-color: #2be080;
+  align-items: center;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.link__enter-contaier:hover {
+  opacity: 0.8;
+}
+
+.link__enter {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  line-height: 16px;
+}
