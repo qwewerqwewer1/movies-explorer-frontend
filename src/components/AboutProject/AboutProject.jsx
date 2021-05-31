@@ -16,10 +16,10 @@ export default function AboutProject() {
         </div>
       </div>
       <div className="project__steps">
-          <p className="project__steps-text">1 неделя</p>
-          <p className="project__steps-text">4 недели</p>
-          <p className="project__description">Back-end</p>
-          <p className="project__description">Front-end</p>
+          <p className="project__step-one">1 неделя</p>
+          <p className="project__step-four">4 недели</p>
+          <p className="project__description-backend">Back-end</p>
+          <p className="project__description-frontend">Front-end</p>
         </div>
     </section>
   )

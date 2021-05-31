@@ -1,6 +1,5 @@
 .project {
   padding: 110px 70px;
-  background-color: #f2f2f2;
 }
 
 .project__title {
@@ -30,4 +29,25 @@
   font-size: 14px;
   line-height: 20px;
   margin: 26 0 0;
+}
+
+.project__steps {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 110px;
+}
+
+.project__step-one {
+  margin: 0;
+  padding: 16px;
+  background-color: #2BE080;
+}
+
+.project__step-four {
+ margin: 0;
+ padding: 16px;
+ background-color: #F2F2F2;
 }
