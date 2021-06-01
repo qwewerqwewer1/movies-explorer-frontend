@@ -1,0 +1,112 @@
+.search-form {
+  padding: 80px 70px 10px;
+}
+
+.search-form__container {
+  border-bottom: 1px solid #aaaaaa;
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 83px;
+}
+
+.search-form__container_input {
+  max-width: 932px;
+  width: 100%;
+  border: 1.5px solid #aaaaaa;
+  border-radius: 50px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form__input {
+  border: none;
+  margin-left: 22px;
+  padding: 0;
+  max-width: 850px;
+  width: 100%;
+  height: 44px;
+}
+
+.search-form__input:focus {
+  outline: none;
+}
+
+.search-form__input_link {
+  min-width: 34px;
+  min-height: 34px;
+  border-radius: 50%;
+  background: #ff6838;
+  border: none;
+  padding: 0;
+  margin-right: 7px;
+  cursor: pointer;
+  background-image: url(../../images/orange__arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-form__checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 167px;
+  width: 100%;
+}
+
+.search-form__checkbox_text {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.search-form__checkbox_original {
+  display: none;
+}
+
+.search-form__switch {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.search-form__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.search-form__slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+  bottom: 2px;
+}
+
+input:checked + .search-form__slider {
+  background: #2be080;
+}
+
+input:checked + .search-form__slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
