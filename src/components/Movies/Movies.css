@@ -1,0 +1,8 @@
+.movies-card-list {
+  padding: 70px 70px 10px;
+}
+
+.movies-card-list__container {
+  display: grid;
+  row-gap: 40px;
+}

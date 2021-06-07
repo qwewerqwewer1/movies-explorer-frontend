@@ -14,7 +14,7 @@ export default function SearchForm() {
         <p className="search-form__checkbox_text">Короткометражки</p>
         <label className="search-form__switch">
           <input type="checkbox" className="search-form__checkbox_original"/>
-          <span className="search-form__slider round"></span>
+          <span className="search-form__slider"></span>
         </label>
       </div>
       </div>

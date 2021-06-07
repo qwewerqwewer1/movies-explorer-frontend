@@ -1,7 +1,7 @@
 import React from 'react'
 import './AboutMe.css'
+import Portfolio from '../Portfolio/Portfolio'
 import photo from '../../images/me.jpg'
-import portfolio__arrow from '../../images/portfolio__arrow.svg'
 
 export default function AboutMe() {
   return (
@@ -26,18 +26,7 @@ export default function AboutMe() {
         </div>
         <img className="about-me__photo" src={photo} alt="Фото разработчика сайта"></img>
       </div>
-      <p className="about-me__portfolio">Портфолио</p>
-      <div className="about-me__portfolio_links">
-        <a href="http://localhost:3000" className="about-me__portfolio_link">Статичный сайт
-          <img className="about-me__portfolio_link_arrow" src={portfolio__arrow} alt="стрелка-ссылка"/>
-        </a>
-        <a href="http://localhost:3000" className="about-me__portfolio_link">Адаптивный сайт
-          <img className="about-me__portfolio_link_arrow" src={portfolio__arrow} alt="стрелка-ссылка"/>
-        </a>
-        <a href="http://localhost:3000" className="about-me__portfolio_link none-underline">Одностраничное приложение
-          <img className="about-me__portfolio_link_arrow" src={portfolio__arrow} alt="стрелка-ссылка"/>
-        </a>
-      </div>
+      <Portfolio />
     </section>
   )
 }

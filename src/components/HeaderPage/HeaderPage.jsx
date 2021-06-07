@@ -1,19 +1,16 @@
 import './HeaderPage.css'
 import logo from '../../images/s_logo.svg'
-
+import Navigation from '../Navigation/Navigation'
+// временное решение
+const logginIn = false
 
 export default function HeaderPage() {
   return (
-    <section className='header'>
+      <section className={logginIn ? 'headerOn' : 'headerOff'}>
       <div className='logo-container'>
-        <img className='logo-container__logo' alt='logo_S' src={logo}/>
+        <img className='logo-container__logo' alt='логотип' src={logo}/>
       </div>
-      <div className='links'>
-        <a href='http://localhost:3000' className='link__register'>Регистрация</a>
-        <div className='link__enter-contaier'>
-          <a href='http://localhost:3000' className='link__enter'>Войти</a>
-        </div>
-      </div>
+      <Navigation logginIn={logginIn}/>
     </section>
   )
 }
