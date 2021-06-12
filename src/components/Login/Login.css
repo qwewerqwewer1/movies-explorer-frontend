@@ -1,0 +1,110 @@
+.register {
+  margin: auto;
+}
+
+.register__container {
+  max-width: 396px;
+  width: 100%;
+  margin: 70px auto;
+}
+
+.register__container_logo {
+  background: #2be080;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  animation: rotateLogo 2s cubic-bezier(0.81, 0.01, 0.25, 1) alternate;
+}
+
+.register__logo {
+  margin: 0;
+  width: 14px;
+  height: 20px;
+  padding: 9px 12px;
+}
+
+.register__title {
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.register__form-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.register__form-input-text {
+  font-size: 10px;
+  line-height: 12px;
+  color: #a0a0a0;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.register__form-input-field {
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e8e8e8;
+  width: 100%;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.register__form-input-field:hover {
+  border-bottom: 1px solid #f7bba9;
+}
+
+.register__form-button {
+  max-width: 396px;
+  width: 100%;
+  margin-top: 221px;
+  background: #ff6838;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 90ms ease-in-out;
+}
+
+.register__form-button:hover {
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.register__question {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a0a0a0;
+}
+
+.register__redirect {
+  color: #ff6838;
+  text-decoration: none;
+}
+
+.register__redirect:hover {
+  color: #b10000;
+  text-decoration: underline;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

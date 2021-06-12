@@ -1,6 +1,7 @@
 import React from 'react'
 import './MoviesCardList.css'
 import MoviesCard from '../MoviesCard/MoviesCard'
+import MoreMovies from '../MoreMovies/MoreMovies'
 
 import i1 from '../../images/1.jpg'
 import i2 from '../../images/2.jpg'
@@ -17,6 +18,7 @@ export default function MoviesCardList() {
       <div className="movies-card-list__container">
         { dataFilms.map( film => {return <MoviesCard film={film} key={film.toString()}/>} ) }
       </div>
+      <MoreMovies/>
     </section>
   )  
 }

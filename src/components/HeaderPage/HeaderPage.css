@@ -32,16 +32,6 @@
   animation: rotateLogo 2s cubic-bezier(0.81, 0.01, 0.25, 1) alternate;
 }
 
-@keyframes rotateLogo {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .links {
   display: flex;
   justify-content: space-between;
@@ -75,4 +65,14 @@
   align-items: center;
   padding: 8px 20px;
   cursor: pointer;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
