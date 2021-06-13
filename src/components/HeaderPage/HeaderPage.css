@@ -1,19 +1,16 @@
-.headerOff {
+.header-page {
   background-color: #465dff;
-  display: flex;
-  /* из за паддингов адаптиd МОЖЕТ БЫТЬ сломается */
-  padding: 18px 70px;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.headerOn {
-  background-color: #ffffff;
+.header-page__container {
   display: flex;
-  /* из за паддингов адаптиd МОЖЕТ БЫТЬ сломается */
-  padding: 18px 70px;
   justify-content: space-between;
   align-items: center;
+  padding: 18px 70px;
+}
+
+.header-page__loggged {
+  background-color: #ffffff;
 }
 
 .logo-container {

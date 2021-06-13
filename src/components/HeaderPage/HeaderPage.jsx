@@ -6,11 +6,14 @@ const logginIn = false
 
 export default function HeaderPage() {
   return (
-      <section className={logginIn ? 'headerOn' : 'headerOff'}>
-      <div className='logo-container'>
-        <img className='logo-container__logo' alt='логотип' src={logo}/>
+      <section className={logginIn ? 'header-page header-page__loggged' : 'header-page'}>
+      <div className="header-page__container">
+        <div className='logo-container'>
+          <img className='logo-container__logo' alt='логотип' src={logo}/>
+        </div>
+        <Navigation logginIn={logginIn}/>
       </div>
-      <Navigation logginIn={logginIn}/>
+      
     </section>
   )
 }
