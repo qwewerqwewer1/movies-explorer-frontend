@@ -28,5 +28,32 @@
 }
 
 .movies-card__picture {
-  width: 220px;
+  width: inherit;
+}
+
+.movies-card__picture-container {
+  max-width: 220px;
+  width: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .movies-card {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .movies-card__picture-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .movies-card__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .movies-card__info_title {
+    margin: 14px auto 5px 12px;
+  }
 }

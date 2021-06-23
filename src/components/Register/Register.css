@@ -108,3 +108,9 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .register__container {
+    margin: 232px auto;
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderPage from '../HeaderPage/HeaderPage';
 import Promo from '../Promo/Promo';
 import NavTab from '../NavTab/NavTab';
-import AboutProject from '../AboutProject/AboutProject';
+import Project from '../Project/Project';
 import Techs from '../Techs/Techs';
 import AboutMe from '../AboutMe/AboutMe';
 import FooterPage from '../FooterPage/FooterPage'
@@ -13,7 +13,7 @@ export default function Main() {
       <HeaderPage/>
       <Promo />
       <NavTab />
-      <AboutProject />
+      <Project />
       <Techs />
       <AboutMe/>
       <FooterPage />

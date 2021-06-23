@@ -32,3 +32,13 @@
   text-decoration: underline;
   color: rgb(177, 31, 31);
 }
+
+@media screen and (max-width: 1023px) {
+  .page-not-found__error {
+    margin: 408px auto 0;
+  }
+
+  .page-not-found__container {
+    margin-bottom: 222px;
+  }
+}

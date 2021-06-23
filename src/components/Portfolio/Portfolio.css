@@ -15,10 +15,7 @@
   font-size: 30px;
   line-height: 50px;
   letter-spacing: -0.04em;
-  font-weight: 400;
-  margin: 0;
-  padding-bottom: 15px;
-  height: 51px;
+  padding-bottom: 14px;
   border-bottom: 1px solid #e8e8e8;
   text-decoration: none;
   color: black;
@@ -33,4 +30,38 @@
 .about-me__portfolio_link_arrow {
   margin-right: 0;
   width: 29px;
+}
+
+@media screen and (max-width: 1023px) {
+  .about-me__portfolio {
+    margin: 90px auto 0;
+  }
+
+  .about-me__portfolio_link {
+    font-size: 28px;
+  }
+
+  .about-me__portfolio_link_arrow {
+    width: 27px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me__portfolio {
+    margin: 69px auto 0;
+    font-size: 14px;
+  }
+
+  .about-me__portfolio_links {
+    margin: 40px auto 0;
+  }
+
+  .about-me__portfolio_link {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .about-me__portfolio_link_arrow {
+    width: 11px;
+  }
 }

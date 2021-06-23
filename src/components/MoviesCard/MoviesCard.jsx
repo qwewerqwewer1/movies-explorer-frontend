@@ -1,6 +1,7 @@
 import React from 'react'
 import './MoviesCard.css'
-// import filmPic from '../../images/1.jpg'
+import i7 from '../../images/7.jpg'
+
 
 export default function MoviesCard(props) {
   return (
@@ -10,8 +11,8 @@ export default function MoviesCard(props) {
         <p className="movies-card__info_time">{props.film.duration}</p>
         <button type="button" className="movies-card__info_like"></button>
       </div>
-      <div className="movies-card__picture">
-        <img src={props.film.image} alt="обложка фильма" />
+      <div className="movies-card__picture-container">
+        <img className="movies-card__picture" src={i7} alt="обложка фильма" />
       </div>
     </div>
   )

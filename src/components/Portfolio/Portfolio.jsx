@@ -5,7 +5,7 @@ import portfolio__arrow from '../../images/portfolio__arrow.svg'
 
 export default function Portfolio() {
   return (
-    <div>
+    <>
       <p className="about-me__portfolio">Портфолио</p>
       <div className="about-me__portfolio_links">
         <a href="http://localhost:3000" className="about-me__portfolio_link">Статичный сайт
@@ -18,6 +18,6 @@ export default function Portfolio() {
           <img className="about-me__portfolio_link_arrow" src={portfolio__arrow} alt="стрелка-ссылка"/>
         </a>
       </div>
-    </div>
+    </>
   )
 }
