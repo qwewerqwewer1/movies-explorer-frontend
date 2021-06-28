@@ -7,13 +7,13 @@ import MoreMovies from '../MoreMovies/MoreMovies'
 import FooterPage from '../FooterPage/FooterPage'
 
 const dataFilms = [
-  {nameRU: 'Alex', duration: '11'},
-  {nameRU: 'Bob', duration: '22'},
-  {nameRU: 'Caytilin', duration: '33'},
-  {nameRU: 'Duke', duration: '44'},
-  {nameRU: 'Eve', duration: '55'},
-  {nameRU: 'Flin', duration: '66'},
-  {nameRU: 'Jay', duration: '77'},
+  {nameRU: 'Alex', duration: '11', id:'0'},
+  {nameRU: 'Bob', duration: '22', id:'1'},
+  {nameRU: 'Caytilin', duration: '33', id:'2'},
+  {nameRU: 'Duke', duration: '44', id:'3'},
+  {nameRU: 'Eve', duration: '55', id:'4'},
+  {nameRU: 'Flin', duration: '66', id:'5'},
+  {nameRU: 'Jay', duration: '77', id:'6'},
 ]
 
 export default function Movies() {
