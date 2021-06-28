@@ -5,9 +5,9 @@ export default function NavTab() {
   return (
     <section className='navigation'>
       <div className="navigation__container">
-        <a className='navigation__link' href="http://localhost:3000">О проекте</a>
-        <a className='navigation__link' href="http://localhost:3000">Технологии</a>
-        <a className='navigation__link' href="http://localhost:3000">Студент</a>
+        <a className='navigation__link' href="#project" >О проекте</a>
+        <a className='navigation__link' href="#techs">Технологии</a>
+        <a className='navigation__link' href="#about-me">Студент</a>
       </div> 
     </section>
   )

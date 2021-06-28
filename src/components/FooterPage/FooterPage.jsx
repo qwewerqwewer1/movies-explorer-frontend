@@ -8,9 +8,9 @@ export default function FooterPage() {
       <div className="footer-page__container">
         <p className="footer-page__container_mark">&copy; 2021</p>
         <div className="footer-page__container_links">
-          <a className="footer-page__container_link" href="http://localhost:3000">Яндекс.Практикум</a>
-          <a className="footer-page__container_link" href="http://localhost:3000">Github</a>
-          <a className="footer-page__container_link" href="http://localhost:3000">VK</a>
+          <a className="footer-page__container_link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
+          <a className="footer-page__container_link" href="https://github.com/qwewerqwewer1">Github</a>
+          <a className="footer-page__container_link" href="https://vk.com/qwewerqwewer">VK</a>
         </div>
       </div>
     </section>

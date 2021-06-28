@@ -1,14 +1,17 @@
 import React from 'react'
 import './Register.css'
 import logo from '../../images/s_logo.svg'
+import { Link } from 'react-router-dom'
 
 export default function Register() {
   return (
     <section className="register">
       <div className="register__container">
-        <div className="register__container_logo">
-          <img className="register__logo" src={logo} alt="Логотип" />
-        </div>
+        <Link to="/">
+          <div className="register__container_logo">
+            <img className="login__logo" src={logo} alt="Логотип" />
+          </div>
+        </Link>
         <h2 className="register__title">Добро пожаловать!</h2>
         <form className="register__form">
           <fieldset className="register__form-fieldset">
@@ -18,10 +21,10 @@ export default function Register() {
             <input type="email" className="register__form-input-field" required />
             <p className="register__form-input-text">Пароль</p>
             <input type="text" className="register__form-input-field" required />
-            <button className="register__form-button">Войти</button>
+            <button className="register__form-button">Зарегестрироваться</button>
           </fieldset>
         </form>
-        <p className="register__question">Уже зарегистрированы? <a className="register__redirect" href="http://localhost:3000">Войти</a></p>
+        <p className="register__question">Уже зарегистрированы? <Link className="register__redirect" to="/signin">Войти</Link></p>
       </div>
     </section>
   )

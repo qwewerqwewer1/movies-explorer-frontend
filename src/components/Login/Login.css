@@ -63,7 +63,7 @@
 .login__form-button {
   max-width: 396px;
   width: 100%;
-  margin-top: 221px;
+  margin-top: 211px;
   background: #ff6838;
   border-radius: 3px;
   font-weight: 500;
@@ -112,5 +112,38 @@
 @media screen and (max-width: 1023px) {
   .login__container {
     margin: 232px auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .login__container {
+    margin: auto;
+  }
+
+  .login__container_logo {
+    margin: 56px auto 0;
+  }
+
+  .login__title {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .login__form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .login__question {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .login__redirect {
+    font-size: 12px;
+    line-height: 15px;
   }
 }

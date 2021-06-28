@@ -1,5 +1,6 @@
 .profile {
   display: flex;
+  justify-content: center;
 }
 
 .profile__container {
@@ -46,6 +47,7 @@
   margin: 0;
   font-size: 11px;
   line-height: 13px;
+  white-space: nowrap;
 }
 
 .profile__container_enter_button {
@@ -79,5 +81,11 @@
 @media screen and (max-width: 1023px) {
   .profile__container {
     margin: 236px auto 269px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile__container {
+    margin: 70px 10px 40px;
   }
 }
