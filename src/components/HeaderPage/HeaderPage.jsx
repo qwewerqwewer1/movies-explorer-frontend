@@ -5,8 +5,8 @@ import Navigation from '../Navigation/Navigation'
 
 // временное решение для изминения состояния шапки ↓
 
-// const loggedIn = true
-const loggedIn = false
+const loggedIn = true
+// const loggedIn = false
 
 export default function HeaderPage() {
   return (

@@ -6,8 +6,8 @@ import FooterPage from '../FooterPage/FooterPage'
 import SearchForm from '../SearchForm/SearchForm'
 
 const dataFilms = [
-  {nameRU: 'Alex', duration: '11'},
-  {nameRU: 'Bob', duration: '22'},
+  {nameRU: 'Alex', duration: 11, id:1},
+  {nameRU: 'Bob', duration: 22, id:2},
 ]
 
 export default function SavedMovies() {
@@ -15,7 +15,7 @@ export default function SavedMovies() {
     <section className="saved-movies">
       <HeaderPage/>
       <SearchForm/>
-      <MoviesCardList dataFilms={dataFilms}/>
+      <MoviesCardList dataFilms={dataFilms} />
       <FooterPage/>
     </section>
   )

@@ -27,6 +27,10 @@
   border: none;
 }
 
+.movies-card__info_like_active {
+  background: url(../../images/like-active.svg);
+}
+
 .movies-card__picture {
   width: inherit;
 }
