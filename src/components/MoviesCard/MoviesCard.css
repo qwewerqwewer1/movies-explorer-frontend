@@ -28,6 +28,10 @@
   background-repeat: no-repeat;
 }
 
+.movies-card__info_like:hover {
+  cursor: pointer;
+}
+
 .movies-card__info_like_active {
   width: 14px;
   height: 12px;
@@ -37,6 +41,10 @@
   background-repeat: no-repeat;
 }
 
+.movies-card__info_like_active:hover {
+  cursor: pointer;
+}
+
 .movies-card__info_like_delete {
   width: 14px;
   height: 12px;
@@ -44,6 +52,10 @@
   border: none;
   background: url(../../images/delete-film.svg);
   background-repeat: no-repeat;
+}
+
+.movies-card__info_like_delete:hover {
+  cursor: pointer;
 }
 
 .movies-card__picture {
