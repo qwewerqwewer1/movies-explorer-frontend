@@ -7,10 +7,12 @@ import Techs from '../Techs/Techs';
 import AboutMe from '../AboutMe/AboutMe';
 import FooterPage from '../FooterPage/FooterPage'
 
+const loggedIn = false
+
 export default function Main() {
   return (
     <>
-      <HeaderPage/>
+      <HeaderPage loggedIn={loggedIn}/>
       <Promo />
       <NavTab />
       <Project />

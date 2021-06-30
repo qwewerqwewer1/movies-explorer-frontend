@@ -23,12 +23,27 @@
   width: 14px;
   height: 12px;
   margin: 30px auto 0;
-  background: url(../../images/like.svg);
   border: none;
+  background: url(../../images/like.svg);
+  background-repeat: no-repeat;
 }
 
 .movies-card__info_like_active {
+  width: 14px;
+  height: 12px;
+  margin: 30px auto 0;
+  border: none;
   background: url(../../images/like-active.svg);
+  background-repeat: no-repeat;
+}
+
+.movies-card__info_like_delete {
+  width: 14px;
+  height: 12px;
+  margin: 30px auto 0;
+  border: none;
+  background: url(../../images/delete-film.svg);
+  background-repeat: no-repeat;
 }
 
 .movies-card__picture {

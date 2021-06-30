@@ -11,11 +11,17 @@ const dataFilms = [
 ]
 
 export default function SavedMovies() {
+
+  const loggedIn = true 
+  //тут background url крестика из savedMovies.css на 2 строке
+ 
+
   return (
     <section className="saved-movies">
-      <HeaderPage/>
+      <HeaderPage loggedIn={loggedIn}/>
       <SearchForm/>
-      <MoviesCardList dataFilms={dataFilms} />
+      <MoviesCardList 
+      dataFilms={dataFilms} />
       <FooterPage/>
     </section>
   )

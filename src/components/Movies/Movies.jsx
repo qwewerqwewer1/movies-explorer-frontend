@@ -17,12 +17,23 @@ const dataFilms = [
 ]
 
 export default function Movies() {
+  
+const loggedIn = true
+
+//background url обычного лайка из import './Movies.css'
+const dislikedAndDeleted = 'movies-card__info_like' 
+// background url закрашенного лайка import './Movies.css'
+const likedAndAdded = 'movies-card__info_like_active'
+
 
   return (
     <div className="movies">
-      <HeaderPage />
+      <HeaderPage loggedIn={loggedIn}/>
       <SearchForm />
-      <MoviesCardList dataFilms={dataFilms}/>
+      <MoviesCardList 
+      dislikedAndDeleted={dislikedAndDeleted} 
+      likedAndAdded={likedAndAdded} 
+      dataFilms={dataFilms}/>
       <MoreMovies />
       <FooterPage />
     </div>

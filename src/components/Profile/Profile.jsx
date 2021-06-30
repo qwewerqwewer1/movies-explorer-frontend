@@ -3,9 +3,12 @@ import './Profile.css'
 import HeaderPage from '../HeaderPage/HeaderPage'
 
 export default function Profile(props) {
+
+  const loggedIn = true
+
   return (
     <>
-    <HeaderPage/>
+    <HeaderPage loggedIn={loggedIn}/>
     <section className='profile'>
       <div className="profile__container">
         <h2 className="profile__container_greetings">Привет, {props.user}!</h2>

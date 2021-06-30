@@ -27,7 +27,6 @@ function App() {
         <SavedMovies />
       </Route>
 
-
       <Route path="/profile">
         <Profile user={user} />
       </Route>
