@@ -21,13 +21,11 @@ export default function MoviesCard(props) {
       <div className="movies-card__info">
         <h3 className='movies-card__info_title'>{props.dataFilm.nameRU}</h3>
         <p className="movies-card__info_time">{props.dataFilm.duration}</p>
-        <button type="button" 
-
+        <button type="button"
         onClick={switchStateCardFilm}
         className={location.pathname === '/saved-movies' && !isLikedAndAdd ? 'movies-card__info_like_delete' : 
         location.pathname === '/saved-movies' && isLikedAndAdd ? 'movies-card__info_like' :
         isLikedAndAdd ? 'movies-card__info_like_active' : 'movies-card__info_like'}></button>
-
       </div>
       <div className="movies-card__picture-container">
         <img className="movies-card__picture" src={i7} alt="обложка фильма" />
