@@ -1,0 +1,116 @@
+.movies-card {
+  padding: 6px 6px 6px 22px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.movies-card__info_title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 16px auto 0;
+}
+
+.movies-card__info_time {
+  margin: 13px auto 0;
+  font-size: 11px;
+  line-height: 13px;
+  color: #a0a0a0;
+}
+
+.movies-card__info_like {
+  width: 14px;
+  height: 12px;
+  margin: 30px auto 0;
+  border: none;
+  background: url(../../images/like.svg);
+  background-repeat: no-repeat;
+}
+
+.movies-card__info_like:hover {
+  cursor: pointer;
+}
+
+.movies-card__info_like_active {
+  width: 14px;
+  height: 12px;
+  margin: 30px auto 0;
+  border: none;
+  background: url(../../images/like-active.svg);
+  background-repeat: no-repeat;
+}
+
+.movies-card__info_like_active:hover {
+  cursor: pointer;
+}
+
+.movies-card__info_like_delete {
+  width: 14px;
+  height: 12px;
+  margin: 30px auto 0;
+  border: none;
+  background: url(../../images/delete-film.svg);
+  background-repeat: no-repeat;
+}
+
+.movies-card__info_like_delete:hover {
+  cursor: pointer;
+}
+
+.movies-card__picture {
+  width: inherit;
+}
+
+.movies-card__picture-container {
+  max-width: 220px;
+  width: 100%;
+}
+
+@media screen and (max-width: 535px) {
+  .movies-card__picture-container {
+    max-width: 190px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .movies-card {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .movies-card__picture-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .movies-card__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .movies-card__info_title {
+    margin: 14px 21px 3px 12px;
+  }
+
+  .movies-card__info_like {
+    order: 2;
+    margin: 16px 16px 4px 120px;
+  }
+
+  .movies-card__info_time {
+    order: 3;
+    margin: 5px 101px 14px 12px;
+  }
+
+  .movies-card__info_like_active {
+    order: 2;
+    margin: 16px 16px 4px 120px;
+  }
+
+  .movies-card__info_like_delete {
+    order: 2;
+    margin: 16px 16px 4px 120px;
+  }
+}

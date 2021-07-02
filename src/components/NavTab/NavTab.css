@@ -1,0 +1,35 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.navigation__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 276px;
+  width: 100%;
+  margin: 24px auto;
+}
+
+.navigation__link {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.navigation__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__container {
+    margin: 25px auto;
+    max-width: 214px;
+  }
+
+  .navigation__link {
+    font-size: 11px;
+  }
+}
