@@ -9,7 +9,6 @@ import { getSavedMovie } from '../../utils/MainApi';
 
 
 export default function SavedMovies(props) {
-
   const [dataFilms, setDataFilms] = React.useState([])
 
   React.useEffect(() => {
