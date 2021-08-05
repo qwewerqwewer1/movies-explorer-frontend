@@ -78,6 +78,34 @@
   text-decoration: underline;
 }
 
+.auth__error {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ee3465;
+  min-height: 12px;
+}
+
+.profile__form-message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  min-height: 13px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile__form-message_type_error {
+  color: #ff004c;
+}
+
+.profile__form-message_type_success {
+  color: #2be080;
+}
+
 @media screen and (max-width: 1023px) {
   .profile__container {
     margin: 236px auto 269px;

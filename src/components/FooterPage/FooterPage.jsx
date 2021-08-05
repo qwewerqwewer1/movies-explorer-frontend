@@ -1,7 +1,7 @@
 import React from 'react'
 import './FooterPage.css'
 
-export default function FooterPage() {
+export default function FooterPage(props) {
   return (
     <section className="footer-page">
       <p className="footer-page__description">Учебный проект Яндекс.Практикум х BeatFilm.</p>

@@ -7,18 +7,16 @@ import Techs from '../Techs/Techs';
 import AboutMe from '../AboutMe/AboutMe';
 import FooterPage from '../FooterPage/FooterPage'
 
-const loggedIn = false
-
-export default function Main() {
+export default function Main(props) {
   return (
     <>
-      <HeaderPage loggedIn={loggedIn}/>
+    <HeaderPage loggedIn={props.loggedIn} />
       <Promo />
       <NavTab />
       <Project />
       <Techs />
       <AboutMe/>
-      <FooterPage />
+    <FooterPage />
     </>
   )
 }

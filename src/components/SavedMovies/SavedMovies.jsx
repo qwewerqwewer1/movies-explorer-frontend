@@ -1,28 +1,38 @@
 import React from 'react'
 import './SavedMovies.css'
+
+import HeaderPage from '../HeaderPage/HeaderPage';
 import MoviesCardList from '../MoviesCardList/MoviesCardList'
-import HeaderPage from '../HeaderPage/HeaderPage'
 import FooterPage from '../FooterPage/FooterPage'
-import SearchForm from '../SearchForm/SearchForm'
+import Searchform from '../SearchForm/SearchForm'
+import { getSavedMovie } from '../../utils/MainApi';
 
-const dataFilms = [
-  {nameRU: 'Alex', duration: 11, id:1},
-  {nameRU: 'Bob', duration: 22, id:2},
-]
 
-export default function SavedMovies() {
+export default function SavedMovies(props) {
 
-  const loggedIn = true 
-  //тут background url крестика из savedMovies.css на 2 строке
- 
+  const [dataFilms, setDataFilms] = React.useState([])
 
+  React.useEffect(() => {
+    const token = localStorage.getItem('token')
+    getSavedMovie(token)
+    .then(res => {
+      if (res.ok) {
+        return res.json()
+      } else {
+        return Promise.reject(`Ошибка ${res.status}`)
+      }})
+    .then(res => setDataFilms(res))
+    .catch(err => console.log(err))
+  })
+  
   return (
-    <section className="saved-movies">
-      <HeaderPage loggedIn={loggedIn}/>
-      <SearchForm/>
-      <MoviesCardList 
-      dataFilms={dataFilms} />
-      <FooterPage/>
-    </section>
+    <>
+      <HeaderPage loggedIn={props.loggedIn} />
+        <section className="saved-movies">
+          <Searchform/>
+          <MoviesCardList dataFilms={dataFilms}/>
+        </section>
+      <FooterPage />
+    </>
   )
 }
